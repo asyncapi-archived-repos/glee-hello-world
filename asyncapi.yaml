@@ -4,6 +4,12 @@ info:
   version: 0.1.0
 
 servers:
+  websockets:
+    url: ws://localhost:3000
+    protocol: ws
+  websockets-production:
+    url: ws://glee-hello-world.heroku.app
+    protocol: ws
   mosquitto:
     url: mqtt://test.mosquitto.org
     protocol: mqtt
