@@ -5,8 +5,11 @@ info:
 
 servers:
   websockets:
-    url: ws://0.0.0.0:5000
+    url: ws://0.0.0.0:{port}
     protocol: ws
+    variables:
+      port:
+        description: Port where to bind WebSocket server
   mosquitto:
     url: mqtt://test.mosquitto.org
     protocol: mqtt
