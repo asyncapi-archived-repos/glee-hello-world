@@ -1,2 +1,4 @@
 # glee-hello-world
-Hello world app to improve Glee onboarding
+
+This app sends a "Hello from Glee!" to the `glee/hello` topic on [Mosquitto test broker](https://test.mosquitto.org).
+
