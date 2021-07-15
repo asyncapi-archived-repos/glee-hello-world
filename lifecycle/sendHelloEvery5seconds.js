@@ -4,7 +4,8 @@ export default async function ({ glee }) {
   setInterval(() => {
     glee.send(new Message({
       channel: 'glee/hello',
-      payload: 'Hello from Glee!'
+      payload: 'Hello from Glee!',
+      serverName: 'mosquitto',
     }))
   }, 5000)
 }

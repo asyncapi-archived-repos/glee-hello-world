@@ -4,12 +4,12 @@ info:
   version: 0.1.0
 
 servers:
-  websockets:
-    url: ws://0.0.0.0:{port}
+  websockets-heroku:
+    url: ws://glee-hello-world.herokup.app
     protocol: ws
-    variables:
-      port:
-        description: Port where to bind WebSocket server
+  websockets:
+    url: ws://0.0.0.0:3000
+    protocol: ws
   mosquitto:
     url: mqtt://test.mosquitto.org
     protocol: mqtt
