@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "glee dev",
-    "start": "glee start"
+    "start": "node ./node_modules/.bin/glee start"
   },
   "repository": {
     "type": "git",
