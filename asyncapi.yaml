@@ -10,16 +10,31 @@ servers:
   websockets:
     url: ws://0.0.0.0:3000
     protocol: ws
+  mosquitto:
+    url: mqtt://test.mosquitto.org
+    protocol: mqtt
 
 channels:
-  glee/hello:
+  /:
     publish:
       operationId: onHello
       message:
         $ref: '#/components/messages/hello'
+      x-servers:
+        - websockets
+        - websockets-heroku
     subscribe:
       message:
         $ref: '#/components/messages/hello'
+      x-servers:
+        - websockets
+        - websockets-heroku
+  glee/hello:
+    subscribe:
+      message:
+        $ref: '#/components/messages/hello'
+      x-servers:
+        - mosquitto
 
 components:
   messages:
