@@ -5,7 +5,7 @@ info:
 
 servers:
   websockets-heroku:
-    url: ws://glee-hello-world.herokup.app
+    url: wss://glee-hello-world.herokup.app
     protocol: ws
   websockets:
     url: ws://0.0.0.0:3000
