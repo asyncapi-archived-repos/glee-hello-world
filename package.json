@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "glee dev",
-    "start": "node ./node_modules/.bin/glee start"
+    "start": "glee start"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/asyncapi/glee-hello-world#readme",
   "dependencies": {
-    "@asyncapi/glee": "^0.2.1"
+    "@asyncapi/glee": "^0.2.2"
   }
 }
